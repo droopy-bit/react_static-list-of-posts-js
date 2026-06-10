@@ -1,9 +1,9 @@
 import './App.scss';
 
- import postsFromServer from './api/posts.json';
- import commentsFromServer from './api/comments.json';
- import usersFromServer from './api/users.json';
- import { PostList } from './components/PostList/PostList';
+import postsFromServer from './api/posts.json';
+import commentsFromServer from './api/comments.json';
+import usersFromServer from './api/users.json';
+import { PostList } from './components/PostList/PostList';
 
 export const App = () => {
   const posts = postsFromServer.map(post => ({
@@ -19,4 +19,3 @@ export const App = () => {
     </section>
   );
 };
-
